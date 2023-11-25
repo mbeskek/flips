@@ -1,19 +1,7 @@
-<#========================== Hydra Prank in Powershell ==============================
-
-SYNOPSIS
-Recreating the classic Hydra pranks from early windows systems in powershell.
-(every time the message popup is closed by the user, 2 more windows will appear!)
-
-USAGE
-Run the script for endless joy ;)
-
-#>
-
 Add-Type -AssemblyName System.Windows.Forms
-
 function Create-Form {
     $form = New-Object Windows.Forms.Form
-    $form.Text = "  __--** YOU HAVE BEEN INFECTED BY HYDRA **--__ "
+    $form.Text = "!!!!!  ВЫ БЫЛИ ЗАРАЖЕНЫ ГИДРОЙ  !!!!!"
     $form.Font = 'Microsoft Sans Serif,12,style=Bold'
     $form.Size = New-Object Drawing.Size(300, 170)
     $form.StartPosition = 'Manual'  # Set StartPosition to Manual
@@ -24,13 +12,13 @@ function Create-Form {
     $form.ForeColor = "#FF0000"
 
     $Text = New-Object Windows.Forms.Label
-    $Text.Text = "Cut The Head Off The Snake..`n`n    ..Two More Will Appear"
+    $Text.Text = "Отрубишь одну голову..`n`n    ..Вырастут еще две"
     $Text.Font = 'Microsoft Sans Serif,14'
     $Text.AutoSize = $true
     $Text.Location = New-Object System.Drawing.Point(15, 20)
 
     $Close = New-Object Windows.Forms.Button
-    $Close.Text = "Close?"
+    $Close.Text = "Закрыть"
     $Close.Width = 120
     $Close.Height = 35
     $Close.BackColor = [System.Drawing.Color]::White
